@@ -5,3 +5,4 @@
 |1 | [What are Signals?](./Angular/01_signals.md)|
 |2 | [What are Pipes?](./Angular/02_pipes.md)|
 |3 | [What is Control Flow Syntax?](./Angular/03_control-flow-syntax.md)|
+|4 | [What is Auth Guard?](./Angular/04_auth-guards.md)|
