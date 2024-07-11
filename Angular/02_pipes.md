@@ -70,4 +70,7 @@ import {ReversePipe} from './reverse.pipe';
 export class AppComponent {
   word = 'You are a champion';
 }
+
+// Output - Reverse Machine: noipmahc a era uoY
 ```
+
