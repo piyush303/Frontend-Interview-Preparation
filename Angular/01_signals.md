@@ -56,3 +56,12 @@ export class SignalsExampleComponent {
   }
 }
 ```
+
+### Output
+
+
+https://github.com/piyush303/Frontend-Interview-Preparation/assets/20353112/b3864742-8730-40b2-b010-3db726fd4a4e
+
+
+
+
