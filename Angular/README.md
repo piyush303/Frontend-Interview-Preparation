@@ -10,3 +10,4 @@
 |6 | [What is Interceptor?](./06_interceptors.md)|
 |7 | [What is Content Project?](./07_content-projection.md)|
 |8 | [What is Image Optimization?](./08_image-optimization.md)|
+|9 | [What is Deferrable View (@defer)?](./09_deferrable-views.md)|
