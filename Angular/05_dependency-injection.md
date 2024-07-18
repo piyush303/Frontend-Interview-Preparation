@@ -9,7 +9,7 @@
 * Consider we have a `UsersService` service which will act as a dependency for a component.
 * Fist step is to add `@Injectable` decorator which tell angular that this class can be injected.
 
-```
+```js
 @Injectable()
 class UserService {}
 ```
@@ -26,7 +26,7 @@ class UserService {}
   * This enables Angular to optimize and efficiently remove services that are unused (tree-shaking).
   * When using this Angular create **single instance** of service and inject that same instance into every class who asks for it. <br/>
 
-  ```
+  ```js
   @Injectable({
     providedIn: 'root'
   })
@@ -36,7 +36,7 @@ class UserService {}
   * In this case service becomes available to all instances of this component and other components and directives used in the template.
   * Tree shaking does not work in this scenario.
  
-  ```
+  ```js
   @Component({
     standalone: true,
     selector: 'user-details',
@@ -50,7 +50,7 @@ class UserService {}
   * In this scenario service is available to all components, directives, and pipes.
     
 
-  ```
+  ```js
   export const appConfig: ApplicationConfig = {
     providers: [
       { provide: UserService },
@@ -58,7 +58,7 @@ class UserService {}
   };
   ```
 
-  ```
+  ```js
   // main.ts
   bootstrapApplication(AppComponent, appConfig)
   ```
@@ -69,14 +69,14 @@ class UserService {}
 ### Consuming a Dependency
 * There are two ways to consume a dependency, which are given below.
 
-```
+```js
 @Component({ … })
 class UserDetailComponent {
   constructor(private service: UserService) {}
 }
 ```
 
-```
+```js
 @Component({ … })
 class UserDetailComponent {
   private service = inject(UserService);
