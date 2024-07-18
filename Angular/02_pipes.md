@@ -15,7 +15,7 @@
 * JsonPipe: Display a component object property to the screen as JSON for debugging.
 
 ### Example: Build-in pipe
-```
+```js
 import {Component} from '@angular/core';
 import { LowerCasePipe } from '@angular/common';
 
@@ -35,7 +35,7 @@ Output - angular
 
 ### Example: Custom pipe
 
-```
+```js
 // reverse.pipe.ts
 import {Pipe, PipeTransform} from '@angular/core';
 
@@ -54,7 +54,7 @@ export class ReversePipe implements PipeTransform {
 }
 ```
 
-```
+```js
 // app.component.ts
 import {Component} from '@angular/core';
 import {ReversePipe} from './reverse.pipe';
