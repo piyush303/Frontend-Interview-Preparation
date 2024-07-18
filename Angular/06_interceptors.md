@@ -12,7 +12,7 @@
 ### Define an interceptor
 **Example**
 
-```
+```js
 export function loggingInterceptor(req: HttpRequest<unknown>, next: HttpHandlerFn): Observable<HttpEvent<unknown>> {
   console.log(req.url);
   return next(req);
@@ -22,7 +22,7 @@ export function loggingInterceptor(req: HttpRequest<unknown>, next: HttpHandlerF
 * E.g. aboove interceptor example will log request url before forwarding request.
 
 ### Configure interceptors
-```
+```js
 bootstrapApplication(AppComponent, {providers: [
   provideHttpClient(
     withInterceptors([loggingInterceptor, cachingInterceptor]),
@@ -33,7 +33,7 @@ bootstrapApplication(AppComponent, {providers: [
 * E.g. loggingInterceptor would process the request and then forward it to the cachingInterceptor.
 
 Below is an example of how to intercept request and add Authetication token in http request.
-```
+```js
 export function authInterceptor(req: HttpRequest<unknown>, next: HttpHandlerFn) {
 
   // Inject the current `AuthService` and use it to get an authentication token:
