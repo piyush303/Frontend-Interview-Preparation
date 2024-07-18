@@ -5,7 +5,7 @@
 * There are two types of signals: Writable Signals and Computed Signals (read-only).
 
 ### How to write Signal in Angular ?
-```
+```js
 import { Component, signal } from '@angular/core';
 
 @Component({
@@ -35,7 +35,7 @@ export class SignalsExampleComponent {
 * Computed signals are both lazily evaluated and memoized.
 * doubleCount's derivation function does not run to calculate its value until the first time you read doubleCount. The calculated value is then cached, and if you read doubleCount again, it will return the cached value without recalculating.
 
-```
+```js
 import { Component, computed, signal } from '@angular/core';
 
 @Component({
