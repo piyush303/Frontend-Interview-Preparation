@@ -4,7 +4,7 @@
 
 #### Question 1
 
-```
+```js
 function outer() {
   var x = 10;
 
@@ -27,7 +27,7 @@ innerFunc();
 
 #### Question 2
 
-```
+```js
 function outer() {
   var x = 10;
 
@@ -52,7 +52,7 @@ innerFunc();
 
 #### Question 3
 
-```
+```js
 function outer() {
   var x = 10;
 
@@ -76,7 +76,7 @@ innerFunc();
 
 #### Question 4
 
-```
+```js
 function outer() {
   var x = 10;
 
@@ -102,7 +102,7 @@ innerFunc();
 
 #### Question 5
 
-```
+```js
 function outer() {
   var x = 10;
 
