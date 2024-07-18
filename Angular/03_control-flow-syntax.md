@@ -6,13 +6,13 @@
 ### `@if` block
 * Conditionally display content.
 
-```
+```js
 @if (a > b) {
   {{a}} is greater than {{b}}
 }
 ```
 
-```
+```js
 @if (a > b) {
   {{a}} is greater than {{b}}
 } @else if (b > a) {
@@ -25,14 +25,14 @@
 ### `@for` block
 * Repeatedly renders the content for each item in collection.
 
-```
+```js
 @for (item of items; track item.id) {
   {{ item.name }}
 }
 ```
 
 * while using `@for` block if there are no items in collection we can use `@empty` block to render empty data message.
-```
+```js
 @for (item of items;) {
   <li> {{ item.name }}</li>
 } @empty {
@@ -45,7 +45,7 @@
 * While using `track` we have to mention unique property, which will be used by Angular to determine which items are updated only.
 * Then Angular updates DOM only for those items which has updated value and not for those whose value didn't change.
 
-```
+```js
 @for (item of items; track item.id;) {
   Item #{{ idx }}: {{ item.name }}
 }
@@ -54,7 +54,7 @@
 ### `@switch` block
 * Angular's `@switch` is similar to Javascript's `switch` statement.
 
-```
+```js
 @switch (condition) {
   @case (caseA) {
     Case A.
