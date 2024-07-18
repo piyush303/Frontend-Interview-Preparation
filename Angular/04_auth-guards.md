@@ -29,7 +29,7 @@
 
 
 ### Example
-```
+```js
 import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
 import { AuthService } from "../services/auth.service";
@@ -51,7 +51,7 @@ export class AuthGuard {
 }
 ```
 
-```
+```js
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './products/products.component';
