@@ -4,7 +4,7 @@
 
 #### Question 1
 
-```
+```js
 console.log(a);
 
 var a = 10;
@@ -15,7 +15,7 @@ var a = 10;
 
 #### Question 2
 
-```
+```js
 var a = 5;
 
 (function () {
@@ -30,7 +30,7 @@ var a = 5;
 
 #### Question 3
 
-```
+```js
 function test() {
   console.log(a);
 
@@ -48,7 +48,7 @@ test();
 
 #### Question 4
 
-```
+```js
 var a = 1;
 function b() {
   // Hoisted  function a() {}
@@ -65,7 +65,7 @@ console.log(a);
 
 #### Question 5
 
-```
+```js
 function foo() {
   function bar() {
     return 3;
@@ -83,7 +83,7 @@ console.log(foo());
 
 #### Question 6 (important)
 
-```
+```js
 function parent() {
   var hoisted = "I'm a variable";
   function hoisted() {
@@ -101,7 +101,7 @@ console.log(parent());
 
 #### Question 7 
 
-```
+```js
 var myVar = "foo";
 (function () {
   console.log("Original value was: " + myVar);
